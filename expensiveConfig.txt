@@ -1,0 +1,5 @@
+IntelCPU 239.92
+Cores: 8, clockSpeed: 7900
+Samsung 11518.7
+capacity: 128
+Total price: 11758.6

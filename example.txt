@@ -1,0 +1,5 @@
+IntelCPU 239.92
+Cores: 8, clockSpeed: 6700
+Asus 5759.36
+capacity: 64
+Total price: 5999.28
