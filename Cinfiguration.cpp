@@ -1,3 +1,5 @@
+#include <typeinfo>
+
 #include "Configuration.h"
 
 void Configuration::clear()
@@ -45,5 +47,16 @@ const Component *Configuration::operator[](std::size_t index) const
 
 void Configuration::insert(const Component *c)
 {
-    this->components.push_back(c);
+    if(!cpu && typeid(c).name() == "Cpu")
+    {
+        hasCpu();
+        this->components.push_back(c);
+    }
+    if(!ram && typeid(c).name() == "Ram")
+    {
+        hasRam();
+        this->components.push_back(c);
+    }
+    else
+        throw std::invalid_argument("the component is already added");
 }

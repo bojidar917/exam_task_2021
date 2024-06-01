@@ -30,8 +30,6 @@ private:
 
     void hasCpu();
     void hasRam();
-
-
 };
 
 inline Configuration *createConfiguration()
